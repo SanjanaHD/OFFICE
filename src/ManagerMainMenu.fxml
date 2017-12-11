@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="450.0" minWidth="600.0" prefHeight="450.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ManagerMainMenuController">
+   <children>
+      <Button fx:id="addContactBtn" layoutX="24.0" layoutY="29.0" minHeight="115.0" minWidth="214.0" mnemonicParsing="false" onAction="#addContact" prefHeight="115.0" prefWidth="215.0" text="ADD" textAlignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font></Button>
+      <Button fx:id="editContactBtn" layoutX="24.0" layoutY="170.0" minHeight="115.0" minWidth="215.0" mnemonicParsing="false" onAction="#editContact" prefHeight="115.0" prefWidth="215.0" text="EDIT" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="24.0" />
+         </font></Button>
+      <Button fx:id="deleteContactBtn" layoutX="24.0" layoutY="311.0" minHeight="115.0" minWidth="215.0" mnemonicParsing="false" onAction="#deleteContact" prefHeight="115.0" prefWidth="215.0" text="DELETE" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="24.0" />
+         </font></Button>
+      <TableView fx:id="meetingsTable" layoutX="256.0" layoutY="31.0" prefHeight="340.0" prefWidth="318.0">
+        <columns>
+          <TableColumn fx:id="dateColumn" prefWidth="100.0" text="Date" />
+          <TableColumn fx:id="topicColumn" prefWidth="217.0" text="Meeting with.." />
+        </columns>
+      </TableView>
+      <Button fx:id="newMeetingBtn" layoutX="256.0" layoutY="381.0" mnemonicParsing="false" onAction="#manageMeetings" prefHeight="45.0" prefWidth="318.0" text="MANAGE MEETINGS">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</AnchorPane>

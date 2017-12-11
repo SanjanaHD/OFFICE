@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="EmployeeMainMenuController">
+   <children>
+      <TableView fx:id="meetingsTable" layoutX="29.0" layoutY="53.0" prefHeight="318.0" prefWidth="542.0">
+        <columns>
+          <TableColumn fx:id="dateColumn" prefWidth="133.0" text="Date" />
+          <TableColumn fx:id="topicColumn" minWidth="1.0" prefWidth="407.0" text="Topic" />
+        </columns>
+      </TableView>
+      <Label layoutX="157.0" layoutY="14.0" text="Your Upcoming Meetings">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

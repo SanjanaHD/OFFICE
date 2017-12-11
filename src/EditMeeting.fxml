@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane prefHeight="318.0" prefWidth="417.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="EditMeetingController">
+   <children>
+      <TableView fx:id="meetingsTable" layoutX="27.0" layoutY="24.0" prefHeight="200.0" prefWidth="365.0">
+         <columns>
+            <TableColumn fx:id="dateColumn" prefWidth="116.0" text="Date" />
+            <TableColumn fx:id="topicColumn" prefWidth="248.0" text="Topic" />
+         </columns>
+      </TableView>
+      <Button fx:id="editMeetingBtn" layoutX="25.0" layoutY="241.0" mnemonicParsing="false" onAction="#editMeeting" prefHeight="62.0" prefWidth="365.0" text="EDIT MEETING">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

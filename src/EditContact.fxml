@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<AnchorPane prefHeight="570.0" prefWidth="817.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="EditContactController">
+
+    <children>
+        <TextField fx:id="firstnamefield" layoutX="39.0" layoutY="22.0" onKeyReleased="#keyReleasedProperty" prefHeight="27.0" prefWidth="268.0" promptText="First Name" AnchorPane.topAnchor="22.0" />
+        <TextField fx:id="lastnamefield" layoutX="321.0" layoutY="22.0" onKeyReleased="#keyReleasedProperty" prefHeight="27.0" prefWidth="268.0" promptText="Last Name" AnchorPane.topAnchor="22.0" />
+        <TextField fx:id="companyfield" layoutX="40.0" layoutY="60.0" onKeyReleased="#keyReleasedProperty" prefHeight="27.0" prefWidth="551.0" promptText="Company" />
+        <Button fx:id="searchBtn" layoutX="612.0" layoutY="17.0" mnemonicParsing="false" onAction="#searchByFieldsProvided" prefHeight="70.0" prefWidth="190.0" text="SEARCH" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="17.0">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Button>
+
+        <TableView fx:id="searchResultsTable" layoutX="26.0" layoutY="97.0" minHeight="356.0" minWidth="750.0" prefHeight="450.0" prefWidth="766.0">
+            <columns>
+                <TableColumn fx:id="titleCol" prefWidth="51.0" text="Title" />
+                <TableColumn fx:id="firstnameCol" prefWidth="103.0" text="First Name" />
+                <TableColumn fx:id="lastnameCol" prefWidth="72.0" text="Last Name" />
+                <TableColumn fx:id="emailCol" prefWidth="62.0" text="Email" />
+                <TableColumn fx:id="skypeidCol" prefWidth="76.0" text="Skype ID" />
+                <TableColumn fx:id="phoneCol" prefWidth="94.0" text="Phone" />
+                <TableColumn fx:id="extnCol" prefWidth="74.0" text="Extn" />
+                <TableColumn fx:id="emergencyCol" prefWidth="118.0" text="Emergency No." />
+                <TableColumn fx:id="companyCol" prefWidth="114.0" text="Company" />
+                <TableColumn fx:id="managerCol" prefWidth="97.0" text="Manager" />
+            </columns>
+        </TableView>
+    </children>
+
+</AnchorPane>

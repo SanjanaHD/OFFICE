@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane prefHeight="342.0" prefWidth="683.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AddMeetingController">
+    <children>
+
+        <Label layoutX="29.0" layoutY="29.0" prefHeight="17.0" prefWidth="105.0" text="Topic" />
+        <TextField fx:id="topic" layoutX="109.0" layoutY="24.0" prefHeight="27.0" prefWidth="241.0" />
+
+        <Label layoutX="29.0" layoutY="150.0" prefHeight="17.0" prefWidth="62.0" text="Notes" />
+
+
+        <TextArea fx:id="notes" layoutX="109.0" layoutY="65.0" prefHeight="133.0" prefWidth="241.0" />
+        <Button fx:id="searchBtn" layoutX="374.0" layoutY="203.0" mnemonicParsing="false" onAction="#searchAndAddAttendees" prefHeight="39.0" prefWidth="287.0" text="Search &amp; Add Attendees" wrapText="true" />
+        <Button fx:id="addmeetingbtn" alignment="CENTER" layoutX="25.0" layoutY="261.0" mnemonicParsing="false" onAction="#saveMeeting" prefHeight="57.0" prefWidth="635.0" text="ADD MEETING">
+            <font>
+                <Font size="30.0" />
+            </font>
+        </Button>
+      <DatePicker fx:id="meetingDate" layoutX="109.0" layoutY="215.0" prefHeight="27.0" prefWidth="241.0" />
+      <Label layoutX="29.0" layoutY="220.0" text="Date" />
+      <ListView fx:id="attendeesListView" layoutX="375.0" layoutY="38.0" prefHeight="154.0" prefWidth="287.0" />
+      <Label layoutX="486.0" layoutY="16.0" text="Attendees" />
+    </children>
+</AnchorPane>

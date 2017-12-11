@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<GridPane fx:id="rootPane" alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AppStartController">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Pane minHeight="450.0" minWidth="600.0" prefHeight="450.0" prefWidth="600.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="235.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/Users/vipulnj/OneDrive/My%20UTD/Fall%2017/OOAD/Picture1.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="usernameinput" layoutX="68.0" layoutY="305.0" prefHeight="27.0" prefWidth="341.0" promptText="username" />
+            <PasswordField fx:id="passwordinput" layoutX="67.0" layoutY="346.0" prefHeight="27.0" prefWidth="341.0" promptText="password" />
+            <Button fx:id="loginbutton" defaultButton="true" layoutX="444.0" layoutY="301.0" mnemonicParsing="false" onAction="#login" prefHeight="78.0" prefWidth="118.0" text="Login" />
+            <Label layoutX="243.0" layoutY="196.0" text="OFFICE++">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="loginstatusLabel" layoutX="68.0" layoutY="396.0" prefHeight="17.0" prefWidth="150.0" text="" textAlignment="CENTER" />
+            <CheckBox fx:id="employeeCheckbox" layoutX="70.0" layoutY="274.0" mnemonicParsing="false" text="Employee login" />
+         </children>
+      </Pane>
+   </children>
+</GridPane>

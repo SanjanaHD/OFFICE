@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane minHeight="500.0" minWidth="800.0" onKeyReleased="#keyReleasedProperty" prefHeight="600.0" prefWidth="1003.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DeleteContactController">
+   <children>
+       <TextField fx:id="firstnameField" layoutX="20.0" layoutY="20.0" prefHeight="27.0" prefWidth="370.0" promptText="First Name" />
+       <TextField fx:id="lastnameField" layoutX="413.0" layoutY="20.0" onKeyReleased="#keyReleasedProperty" prefHeight="27.0" prefWidth="370.0" promptText="Last Name" />
+       <TextField fx:id="companyField" layoutX="20.0" layoutY="60.0" onKeyReleased="#keyReleasedProperty" prefHeight="27.0" prefWidth="761.0" promptText="Company" />
+       <Button fx:id="searchBtn" layoutX="803.0" layoutY="20.0" mnemonicParsing="false" onAction="#searchByFieldsProvided" prefHeight="67.0" prefWidth="166.0" text="SEARCH" textAlignment="CENTER">
+           <font>
+               <Font size="24.0" />
+           </font>
+       </Button>
+   
+       <TableView fx:id="searchResultsTable" layoutX="31.0" layoutY="107.0" minHeight="324.0" minWidth="749.0" prefHeight="406.0" prefWidth="938.0">
+           <columns>
+               <TableColumn fx:id="titleCol" prefWidth="36.0" text="Title" />
+               <TableColumn fx:id="firstnameCol" prefWidth="118.0" text="First Name" />
+               <TableColumn fx:id="lastnameCol" prefWidth="98.0" text="Last Name" />
+               <TableColumn fx:id="emailCol" prefWidth="60.0" text="Email" />
+               <TableColumn fx:id="skypeidCol" text="Skype ID" />
+               <TableColumn fx:id="phoneCol" prefWidth="92.0" text="Phone" />
+               <TableColumn fx:id="extnCol" prefWidth="82.0" text="Extn" />
+               <TableColumn fx:id="emergencyCol" prefWidth="118.0" text="Emergency No." />
+               <TableColumn fx:id="companyCol" prefWidth="124.0" text="Company" />
+               <TableColumn fx:id="managerCol" prefWidth="129.0" text="Manager" />
+           </columns>
+       </TableView>
+   
+       <Button layoutX="370.0" layoutY="528.0" mnemonicParsing="false" onAction="#deleteByFieldsProvided" prefHeight="58.0" prefWidth="260.0" text="DELETE CONTACT" textAlignment="CENTER">
+           <font>
+               <Font size="24.0" />
+           </font>
+       </Button>
+   </children>
+</AnchorPane>

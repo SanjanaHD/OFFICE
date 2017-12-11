@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane minHeight="450.0" minWidth="600.0" prefHeight="450.0" prefWidth="799.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="EditSelectedContactController">
+    <children>
+        <Label layoutX="29.0" layoutY="45.0" prefHeight="17.0" prefWidth="34.0" text="Title" />
+        <TextField fx:id="titlefield" layoutX="102.0" layoutY="40.0" prefHeight="27.0" prefWidth="53.0" />
+
+        <Label layoutX="169.0" layoutY="45.0" prefHeight="17.0" prefWidth="72.0" text="First Name" />
+        <TextField fx:id="firstnamefield" layoutX="249.0" layoutY="40.0" onKeyReleased="#keyReleasedProperty" prefHeight="27.0" prefWidth="184.0" />
+
+        <Label layoutX="448.0" layoutY="45.0" prefHeight="17.0" prefWidth="72.0" text="Last Name" />
+        <TextField fx:id="lastnamefield" layoutX="533.0" layoutY="40.0" onKeyReleased="#keyReleasedProperty" prefHeight="27.0" prefWidth="220.0" />
+
+        <Label layoutX="29.0" layoutY="88.0" prefHeight="17.0" prefWidth="34.0" text="Email" />
+        <TextField fx:id="emailfield" layoutX="102.0" layoutY="83.0" onKeyReleased="#keyReleasedProperty" prefHeight="27.0" prefWidth="328.0" />
+
+
+        <Label layoutX="448.0" layoutY="88.0" prefHeight="17.0" prefWidth="62.0" text="Skype ID" />
+        <TextField fx:id="skypeidfield" layoutX="533.0" layoutY="83.0" prefHeight="27.0" prefWidth="220.0" />
+
+
+        <Label layoutX="26.0" layoutY="135.0" prefHeight="17.0" prefWidth="40.0" text="Phone" />
+        <TextField fx:id="phonefield" layoutX="102.0" layoutY="130.0" onKeyReleased="#keyReleasedProperty" prefHeight="27.0" prefWidth="171.0" />
+
+        <TextField fx:id="extnfield" layoutX="326.0" layoutY="130.0" prefHeight="27.0" prefWidth="102.0" />
+        <Label layoutX="286.0" layoutY="135.0" prefHeight="17.0" prefWidth="40.0" text="Extn." />
+
+        <Label layoutX="448.0" layoutY="135.0" prefHeight="17.0" prefWidth="72.0" text="Emergency" />
+        <TextField fx:id="emergencynofield" layoutX="534.0" layoutY="130.0" prefHeight="27.0" prefWidth="220.0" />
+
+        <Label layoutX="22.0" layoutY="177.0" prefHeight="17.0" prefWidth="62.0" text="Manager" />
+        <TextField fx:id="managernamefield" layoutX="102.0" layoutY="172.0" prefHeight="27.0" prefWidth="659.0" />
+
+        <Label layoutX="22.0" layoutY="217.0" prefHeight="17.0" prefWidth="72.0" text="Company" />
+        <TextField fx:id="companyfield" layoutX="110.0" layoutY="212.0" prefHeight="27.0" prefWidth="650.0" />
+
+        <Label layoutX="24.0" layoutY="248.0" prefHeight="23.0" prefWidth="163.0" text="Business Address">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <Separator layoutX="205.0" layoutY="258.0" prefHeight="4.0" prefWidth="552.0" />
+
+        <Label layoutX="22.0" layoutY="289.0" prefHeight="17.0" prefWidth="62.0" text="Prop No." />
+        <TextField fx:id="propnofield" layoutX="104.0" layoutY="284.0" prefHeight="27.0" prefWidth="92.0" />
+        <Label layoutX="215.0" layoutY="289.0" text="Street Name" />
+        <TextField fx:id="streetnamefield" layoutX="306.0" layoutY="284.0" prefHeight="27.0" prefWidth="260.0" />
+        <Label layoutX="579.0" layoutY="289.0" text=" No." />
+        <TextField fx:id="aptnofield" layoutX="644.0" layoutY="284.0" prefHeight="27.0" prefWidth="121.0" />
+        <Label layoutX="22.0" layoutY="332.0" prefHeight="17.0" prefWidth="28.0" text="City" />
+        <TextField fx:id="cityfield" layoutX="105.0" layoutY="327.0" prefHeight="27.0" prefWidth="350.0" />
+        <Label layoutX="468.0" layoutY="332.0" text="State" />
+        <TextField fx:id="statefield" layoutX="514.0" layoutY="327.0" prefHeight="27.0" prefWidth="250.0" />
+
+        <Button fx:id="addcontactbtn" alignment="CENTER" layoutX="256.0" layoutY="379.0" mnemonicParsing="false" onAction="#saveDetails" prefHeight="57.0" prefWidth="288.0" text="UPDATE CONTACT">
+            <font>
+                <Font size="27.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>

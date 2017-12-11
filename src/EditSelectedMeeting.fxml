@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane prefHeight="342.0" prefWidth="370.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="EditSelectedMeetingController">
+    <children>
+
+        <Label layoutX="29.0" layoutY="29.0" prefHeight="17.0" prefWidth="105.0" text="Topic" />
+        <TextField fx:id="topic" layoutX="89.0" layoutY="24.0" prefHeight="27.0" prefWidth="241.0" />
+
+        <Label layoutX="27.0" layoutY="123.0" prefHeight="17.0" prefWidth="62.0" text="Notes" />
+
+
+        <TextArea fx:id="notes" layoutX="89.0" layoutY="65.0" prefHeight="133.0" prefWidth="241.0" />
+        <Button fx:id="saveChangesBtn" alignment="CENTER" layoutX="25.0" layoutY="261.0" mnemonicParsing="false" onAction="#saveChanges" prefHeight="57.0" prefWidth="310.0" text="SAVE CHANGES">
+            <font>
+                <Font size="30.0" />
+            </font>
+        </Button>
+        <DatePicker fx:id="meetingDate" layoutX="88.0" layoutY="215.0" prefHeight="27.0" prefWidth="241.0" />
+        <Label layoutX="29.0" layoutY="220.0" text="Date" />
+    </children>
+</AnchorPane>
